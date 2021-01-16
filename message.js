@@ -22,7 +22,6 @@ feedBack_header.addEventListener("click", () => {
     feedBack.classList.add("active");
     close__btn.classList.add("active");
     document.querySelector(".feedBack_header span").setAttribute("style", "font-size: 18px");
-    if (window.screen.width <= "838") document.body.classList.add("lock");
     write_message.focus();
 });
 
@@ -32,7 +31,6 @@ close__btn.addEventListener("click", () => {
     feedBack.classList.remove("active");
     close__btn.classList.remove("active");
     document.querySelector(".feedBack_header span").removeAttribute("style");
-    if (window.screen.width <= "838") document.body.classList.remove("lock");
 });
 
 let feedBack_body = document.querySelector(".feedBack_body");
