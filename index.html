@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./message.css">
+    <link rel="icon" href="./img/icon/checked.svg">
+</head>
+
+<body>
+    <div class="feedBack">
+        <form action="#" id="form" class="form__body">
+            <div class="close__btn"></div>
+            <div class="feedBack_header">
+                <img src="./img/icon/messages-silhouette.svg" alt="#">
+                <span>Ուղարկել հաղորդագրություն</span>
+            </div>
+            <div class="feedBack_body">
+                <span></span>
+                <!-- span@ space-betweeni hamar vorpes arajin element-->
+                <div class="chat">
+                    <div class="admin_writed">
+                        <p>Բարեւ Ձեզ. Հարցեր ունե՞ք: Մենք ուրախ կլինենք պատասխանել:</p>
+                    </div>
+                    <div class="user_writed"></div>
+                </div>
+                <div class="message_register_list">
+                    <span>Մուտքագրեք ձեր տվյալները, որպեսզի կարողանանք պատասխանել ձեզ</span>
+                    <div class="form__register">
+                        <label><input type="text" class="_forChack" placeholder="Ձեր անունը*"></label>
+                        <label><input type="number" class="_forChack" placeholder="Ձեր հեռախոսահամարը*"></label>
+                        <label><input type="email" class="_forChack" placeholder="Ձեր e-mail*"></label>
+                        <input type="submit" value="Ուղարկել" class="register_list_btn">
+                    </div>
+                </div>
+            </div>
+            <div class="writing__tools">
+                <div class="show_picture">
+                    <span class="delete_picture"></span>
+                    <div class="chosen_picture"></div>
+                </div>
+                <div class="writing">
+                    <label for="file" class="file">
+                        <input type="file" name="file" id="file" accept=".jpg, .png, .gif">
+                    </label>
+                    <input type="text" name="text" class="write_message" placeholder="Մուտքագրեք հաղորդագրությունը">
+                    <button type="submit" class="send__message"></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./message.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
