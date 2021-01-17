@@ -12,7 +12,7 @@ input {outline-style: none;}
     height: 400px;
     z-index: 2;
     border-radius: 0 40px 0 0;
-    transform: translate(311px, 40px) rotate(-90deg) scale(0.55);
+    transform: translate(326px, 40px) rotate(-90deg) scale(0.65);
     transition: all ease 0.3s;
 }
 .feedBack.active {
@@ -70,7 +70,7 @@ input {outline-style: none;}
     cursor: pointer;
 }
 .feedBack_header img {
-    width: 27px;
+    width: 31px;
     margin: 0 10px;
 }
 .feedBack_header span {
@@ -336,6 +336,7 @@ input::-webkit-inner-spin-button {
         background: url(./img/icon/left-arrow.svg)0 0/contain no-repeat;
     }
     .feedBack_header img {
+        width: 27px;
         margin: 0 10px 0 38px;
     }
 }
